@@ -112,21 +112,16 @@
 				<h2>Tips</h2>
 				<p><?php echo e(__("messages.The easiest way to keep life on track")); ?></p>
 			</div>
-            <div class="row">
+            <div class="row  mb-5">
                 <?php if(count($tips)>0): ?>
                     <?php $__currentLoopData = $tips; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $tip): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                                 <div class="doctorl-part-box col-lg-3">
-                                        <?php
-                                        if($tip->image){
-                                            $image=asset('upload/tips')."/".$tip->image;
-                                        }else{
-                                            $image=asset('upload/profile/profile.png');
-                                        }
-                                        ?>
-                                    <div class="doctorl-dp-img doctorl-dp-img-1"
-                                         style="background-image: url('<?=$image?>')"></div>
+
+                                    <div class="mb-5">
+                                        <img class="img-fluid" src="<?php echo e(asset($tip->image)); ?>">
+                                    </div>
                                     <div class="doctorl-part-detail">
-                                        <h4><?php echo e(ucwords(strtolower($tip->title))); ?></h4>
+                                        <h5><?php echo e(ucwords(strtolower($tip->title))); ?></h5>
                                     </div>
 
                                 </div>

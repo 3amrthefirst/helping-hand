@@ -6,7 +6,7 @@
    <div class="col-sm-4">
       <div class="page-header float-left">
          <div class="page-title">
-            <h1>Save Tips</h1>
+            <h1>Edit Tips</h1>
          </div>
       </div>
    </div>
@@ -15,7 +15,7 @@
          <div class="page-title">
             <ol class="breadcrumb text-right">
                <li><a href="<?php echo e(url('admin/tips')); ?>">Tips</a></li>
-               <li class="active">Save Tips</li>
+               <li class="active">Edit Tips</li>
             </ol>
          </div>
       </div>
@@ -46,24 +46,26 @@
                      </ul>
                   </div>
                   <?php endif; ?>
-                  <form action="<?php echo e(route('tips.store')); ?>" method="post" novalidate="novalidate" enctype="multipart/form-data">
+                  <form action="<?php echo e(route('tips.update' , $tip->id)); ?>" method="post" novalidate="novalidate" enctype="multipart/form-data">
                      <?php echo e(csrf_field()); ?>
 
+                      <?php echo e(method_field('PUT')); ?>
 
+                      
                      <input type="hidden" name="real_image" id="real_image" value="<?php echo e(isset($data->image)?$data->image:''); ?>"/>
                      <div class="form-group">
                         <label for="name" class=" form-control-label">
                         Title
                         <span class="reqfield">*</span>
                         </label>
-                        <input type="text" id="name" placeholder="<?php echo e(__('messages.Enter')); ?> Title" class="form-control" required name="title" value="<?php echo e(isset($data->name)?$data->name:''); ?>">
+                        <input type="text" id="name" placeholder="<?php echo e(__('messages.Enter')); ?> Title" class="form-control" required name="title" value="<?php echo e($tip->title); ?>">
                      </div>
                      <div class="form-group">
                         <label for="file" class=" form-control-label">
                         <?php echo e(__('messages.Image')); ?><span class="reqfield" >*</span>
                         </label>
 
-
+                        <img src="<?php echo e(asset($tip->image)); ?>" class="imgsize1 departmentimg mb-3"/>
 
                         <div>
                            <input type="file" id="file" name="image" class="form-control-file" accept="image/*">
@@ -93,4 +95,4 @@
 
 <?php $__env->stopSection(); ?>
 
-<?php echo $__env->make('admin.layout', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH E:\freelance laravel\helping-hand\resources\views/admin/tips/create.blade.php ENDPATH**/ ?>
+<?php echo $__env->make('admin.layout', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH E:\freelance laravel\helping-hand\resources\views/admin/tips/edit.blade.php ENDPATH**/ ?>

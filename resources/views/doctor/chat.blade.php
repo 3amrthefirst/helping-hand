@@ -1,6 +1,6 @@
 @extends("doctor.layout")
 @section("title")
-{{__('messages.Chat')}} 
+{{__('messages.Chat')}}
 @stop
 @section("meta_title")
 @if(Session::get("is_rtl")==""||Session::get("is_rtl")=='1')
@@ -19,7 +19,7 @@
         border-radius: 0.25rem;
         transition: all .3s ease;
         padding: 15px;
-        background: #e7d045;
+        background: #41e296;
         border: 4px solid #294b65;
         margin-bottom: 10px;
     }
@@ -75,7 +75,7 @@
                            </div>
                         </div>
                         <ul class="contacts-list" id="userchatlist" data-chat-list="" style="padding: 15px;list-style: none;">
-                          
+
                         </ul>
                      </div>
                   </div>
@@ -133,9 +133,9 @@
                          <ul class="nav flex-nowrap">
                          </ul>
                       </div>
-                     
+
                       <div class="chat-content p-2" id="bodymessage" style="height: 570px;" >
-                        
+
                      <div class="chat-finished" id="chat-finished"></div>
                   </div>
                   <div class="chat-footer">
@@ -158,7 +158,7 @@
                                  </button>
                               </div>
                               <input type="text" id="sendmsg" name="sendmsg" class="form-control transparent-bg border-0 no-resize hide-scrollbar" placeholder="Write your message...">
-                             
+
                            </div>
                         </div>
                         <div class="col-auto">
@@ -170,7 +170,7 @@
                         </div>
                      </div>
                   </div>
-                </div>                
+                </div>
                </div>
             </div>
          </main>
@@ -187,7 +187,7 @@
     <input type="hidden" id="tokenflag" value="0">
     <input type="hidden" id="deletemsg" value="{{__('messages.Delete')}}">
     <input type="hidden" id="typingmsg" value="{{__('messages.Typing')}}">
-   
+
     <input type="hidden" id="currentprofileimage" value="{{Session::get('profile_pic')}}">
 @stop
 

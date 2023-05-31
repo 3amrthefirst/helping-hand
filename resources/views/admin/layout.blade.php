@@ -41,6 +41,7 @@
       <aside id="left-panel" class="left-panel">
          <nav class="navbar navbar-expand-sm navbar-default">
             <div class="navbar-header">
+
                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
                <i class="fa fa-bars"></i>
                </button>
@@ -117,7 +118,7 @@
                <div class="col-sm-5">
                   <div class="user-area dropdown float-right">
                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                     <img class="user-avatar rounded-circle" src="{{Session::get('profile_pic')}}" alt="User Avatar">
+                     <img class="user-avatar rounded-circle" src="{{asset('profile.png')}}" alt="User Avatar">
                      </a>
                      <div class="user-menu dropdown-menu">
                         <a class="nav-link" href="{{url('admin/editprofile')}}"><i class="fa fa-user"></i> {{__('messages.My Profile')}}</a>

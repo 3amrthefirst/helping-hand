@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Model\Tip;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 
 class TipsController extends Controller
 {
@@ -35,7 +36,15 @@ class TipsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'title' => 'required',
+            'image' => 'required|mimes:jpg,jpeg,png,svg',
+        ]);
+        Tip::create($request->all());
+
+        Session::flash('message','Tips added successfully ');
+        Session::flash('alert-class', 'alert-success');
+        return redirect("admin/tips/");
     }
 
     /**
@@ -57,7 +66,8 @@ class TipsController extends Controller
      */
     public function edit($id)
     {
-        //
+        $tip = Tip::find($id);
+        return view("admin.tips.edit" , compact('tip'));
     }
 
     /**
@@ -69,7 +79,15 @@ class TipsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $request->validate([
+            'image' => 'mimes:jpg,jpeg,png,svg',
+        ]);
+        $tip = Tip::find($id);
+        $tip->update($request->all());
+
+        Session::flash('message','Tips updated successfully ');
+        Session::flash('alert-class', 'alert-success');
+        return redirect("admin/tips/");
     }
 
     /**
@@ -80,6 +98,10 @@ class TipsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $tip = Tip::find($id);
+        $tip->delete();
+        Session::flash('message','Tips Deleted successfully ');
+        Session::flash('alert-class', 'alert-success');
+        return redirect()->back();
     }
 }

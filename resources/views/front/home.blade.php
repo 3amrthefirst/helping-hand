@@ -110,21 +110,16 @@
 				<h2>Tips</h2>
 				<p>{{__("messages.The easiest way to keep life on track")}}</p>
 			</div>
-            <div class="row">
+            <div class="row  mb-5">
                 @if(count($tips)>0)
                     @foreach($tips as $tip)
                                 <div class="doctorl-part-box col-lg-3">
-                                        <?php
-                                        if($tip->image){
-                                            $image=asset('upload/tips')."/".$tip->image;
-                                        }else{
-                                            $image=asset('upload/profile/profile.png');
-                                        }
-                                        ?>
-                                    <div class="doctorl-dp-img doctorl-dp-img-1"
-                                         style="background-image: url('<?=$image?>')"></div>
+
+                                    <div class="mb-5">
+                                        <img class="img-fluid" src="{{asset($tip->image)}}">
+                                    </div>
                                     <div class="doctorl-part-detail">
-                                        <h4>{{ucwords(strtolower($tip->title))}}</h4>
+                                        <h5>{{ucwords(strtolower($tip->title))}}</h5>
                                     </div>
 
                                 </div>

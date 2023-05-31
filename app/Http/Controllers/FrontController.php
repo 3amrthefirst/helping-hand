@@ -35,7 +35,7 @@ class FrontController extends Controller
 {
        public function __construct(){
           $setting = Setting::find(1);
-          Session::put("main_color","#e7d045");
+          Session::put("main_color","#41e296");
           Session::put("text_color","#0f4a86");
           Session::put("headingtext_color","#0f4a86");
           Session::put("lowbackground_box_color","#ededc2");

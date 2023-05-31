@@ -2513,7 +2513,7 @@ hr {
 }
 #debug {
 	overflow-y: scroll !important;
-	height: 180px;	
+	height: 180px;
 }
 
 .dm-uploader {
@@ -2701,7 +2701,7 @@ button.ui-datepicker-trigger {
 
 
 
-#overlay{   
+#overlay{
     position: fixed;
     top: 0;
     z-index: 100;
@@ -2714,9 +2714,9 @@ button.ui-datepicker-trigger {
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
 }
-#overlaychk{   
+#overlaychk{
     position: fixed;
     top: 0;
     z-index: 100;
@@ -2725,7 +2725,7 @@ button.ui-datepicker-trigger {
     display: none;
     background: rgba(0,0,0,0.6);
 }
-.laychk{   
+.laychk{
     position: fixed;
     top: 0;
     z-index: 100;
@@ -2743,18 +2743,18 @@ button.ui-datepicker-trigger {
     animation: sp-anime 0.8s infinite linear;
 }
 @keyframes sp-anime {
-    100% { 
-        transform: rotate(360deg); 
+    100% {
+        transform: rotate(360deg);
     }
 }
 .is-hide{
     display:none;
 }
- 
+
 
 
 .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
-   
+
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
@@ -3039,7 +3039,7 @@ img {
 
 .call-notification-box {
     padding: 10px 20px;
-    background-color: #e7d045;
+    background-color: #41e296;
     display: flex;
 }
 

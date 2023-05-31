@@ -52,14 +52,14 @@ Tips
                         @if(count($data)>0)
                         @foreach($data as $d)
                         <tr>
-                           <td>{{isset($d->id)?$d->id:""}}</td>
+                           <td>{{$loop->iteration}}</td>
                            <td>{{isset($d->title)?$d->title:""}}</td>
                            <td>
-                               <img style="width: 100px;" src="{{asset('upload/tips').'/'.$d->image}}" class="imgsize1"/>
+                               <img style="width: 100px;" src="{{asset($d->image)}}" class="imgsize1"/>
                            </td>
                            <td>
-                                <a href="{{url('admin/savedepartment/').'/'.$d->id}}" class="btn btn-primary">{{__('messages.Edit')}}</a>
-                                <a href="javascript:deleterow('deletedepartment','<?= $d->id ?>')" class="btn btn-danger">{{__('messages.Delete')}}</a>
+                                <a href="{{route('tips.edit' , $d->id)}}" class="btn btn-primary">{{__('messages.Edit')}}</a>
+                                <a href="javascript:deleterow('deletedtip','<?= $d->id ?>')" class="btn btn-danger">{{__('messages.Delete')}}</a>
                            </td>
                         </tr>
                         @endforeach

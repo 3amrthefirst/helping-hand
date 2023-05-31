@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\api;
+namespace App\Http\Controllers\API;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Response;
@@ -20,7 +20,7 @@ use Auth;
 use Mail;
 use DB;
 class ServerController extends Controller {
-   
+
    public function server_restart_process(){
             $curl = curl_init();
             curl_setopt_array($curl, array(
@@ -49,19 +49,19 @@ class ServerController extends Controller {
                 }else{
                     $msg = "drawing-how-to-draw domain is not working you need to replace";
                     mail("express.template@gmail.com","Domain Notification",$msg);
-                    
-                    $sid    = "AC7b7486634848f2eec6952cf754d3a66b"; 
-                    $token  = "313394071143c3b28cb5431f2ee5c3e3"; 
-                    $twilio = new Client($sid, $token); 
- 
-                    $message = $twilio->messages 
-                                       ->create("+919904444091", // to 
-                                       array(        
+
+                    $sid    = "AC7b7486634848f2eec6952cf754d3a66b";
+                    $token  = "313394071143c3b28cb5431f2ee5c3e3";
+                    $twilio = new Client($sid, $token);
+
+                    $message = $twilio->messages
+                                       ->create("+919904444091", // to
+                                       array(
                                            "body" => "Domain Notification : drawing-how-to-draw server not working",
                                            "from"=> "+18482942680"
-                                       ) 
-                    ); 
- 
+                                       )
+                    );
+
                     print($message);
                 }
             }

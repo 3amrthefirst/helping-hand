@@ -106,6 +106,7 @@ Route::group(['prefix' => 'admin'], function () {
 
          //tips
          Route::resource("tips","TipsController");
+         Route::get("deletedtip/{id}","TipsController@destroy");
 
          //doctor
 		 Route::resource("doctor","DoctorController");

@@ -86,7 +86,7 @@
 
 	.tab-subcription-part-box {
 	    display: block;
-	    margin-bottom: 0px; 
+	    margin-bottom: 0px;
 	}
 
 	.my-accountpg-main-box .tab-chpmainbox {
@@ -153,15 +153,15 @@
 		height: 400px;
 		float: none;
 	}
-   
-   
+
+
     .d-detail-emergency-mainbox {
     text-align: center;
     padding: 30px;
     background-color: #fffce7;
     border-radius: 10px;
     margin-bottom: 30px;
-      width: 50%; 
+      width: 50%;
     margin: 20px auto;
 }
 	.left-triangle {
@@ -209,10 +209,10 @@
 	.single-testimonial {
 	    margin: 0px 5px;
 	}
-	
+
 .testimonial-part-box {
     padding: 15px;
-    border: 1px solid #e7d045;
+    border: 1px solid #41e296;
     border-radius: 10px;
     height: 191px;
 }
@@ -290,7 +290,7 @@ p.testip {
 	.navigation-custom-single .logo-img {
 	    width: 150px;
 	}
-	
+
 	.testtext {
     padding-right: 0px;
     padding-left: 0px;
@@ -298,7 +298,7 @@ p.testip {
 
 .testimonial-part-box {
     padding: 15px;
-    border: 1px solid #e7d045;
+    border: 1px solid #41e296;
     border-radius: 10px;
     height: 242px;
 }
@@ -321,7 +321,7 @@ p.testip {
 	.spacefor-global {
 	    height: 108px;
 	}
-	
+
 	p.testip {
     text-align: justify;
     font-size: 12px;
@@ -357,7 +357,7 @@ p.testip {
 	    color: white;
 	    margin: 15px 0px;
 	}
-	
+
 	.owl-carousel .owl-item img {
     display: block;
     height: 94px;
@@ -468,13 +468,13 @@ p.testip {
     background-color: #fffce7;
     border-radius: 10px;
     margin-bottom: 30px;
-      width: 100%; 
+      width: 100%;
     margin: 20px auto;
 }
 
 	.testimonial-part-box {
     padding: 15px;
-    border: 1px solid #e7d045;
+    border: 1px solid #41e296;
     border-radius: 10px;
     height: 195px;
 }
@@ -549,7 +549,7 @@ p.testip {
 	}
 	.testimonial-part-box {
     padding: 15px;
-    border: 1px solid #e7d045;
+    border: 1px solid #41e296;
     border-radius: 10px;
     height: 195px;
 }
@@ -566,7 +566,7 @@ p.testip {
 @media(max-width: 420px) {
 	.testimonial-part-box {
     padding: 15px;
-    border: 1px solid #e7d045;
+    border: 1px solid #41e296;
     border-radius: 10px;
     height: 223px;
 }

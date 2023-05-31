@@ -2,19 +2,19 @@
 
 @font-face {
     font-family: 'AvenirLTStd-Book';
-    src: url('../font/AvenirLTStd-Book.eot'); 
+    src: url('../font/AvenirLTStd-Book.eot');
     src: local('AvenirLTStd-Book'), local('AvenirLTStd-Book'), url('AvenirLTStd-Book.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'AvenirLTStd-Medium';
-    src: url('../font/AvenirLTStd-Medium.eot'); 
+    src: url('../font/AvenirLTStd-Medium.eot');
     src: local('AvenirLTStd-Medium'), local('AvenirLTStd-Medium'), url('AvenirLTStd-Medium.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'AvenirLTStd-Roman';
-    src: url('../font/AvenirLTStd-Roman.eot'); 
+    src: url('../font/AvenirLTStd-Roman.eot');
     src: local('AvenirLTStd-Roman'), local('AvenirLTStd-Roman'), url('AvenirLTStd-Roman.otf') format('opentype');
 }
 
@@ -36,7 +36,7 @@ a:hover{
     content: '';
     height: 8px;
     width: 67px;
-    background-color: #e7d045;
+    background-color: #41e296;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -98,7 +98,7 @@ a:hover{
 }
 
 .services-btn-main-box a {
-    background-color: #e7d045;
+    background-color: #41e296;
     border: none;
     color: white;
     width: 100%;
@@ -112,7 +112,7 @@ a:hover{
 }
 
 .appo-btn-main-box button {
-    background-color: #e7d045;
+    background-color: #41e296;
     border: none;
     color: white;
     width: 100%;
@@ -143,11 +143,11 @@ a:hover{
 
 #overlayer {
     width:100%;
-    height:100%;  
+    height:100%;
     position:fixed;
     z-index:11;
     top: 0;
-    background: #e7d045;
+    background: #41e296;
 }
 .loader {
     display: inline-block;
@@ -173,19 +173,19 @@ a:hover{
     0% {
         transform: rotate(0deg);
     }
-  
+
     25% {
         transform: rotate(180deg);
     }
-  
+
     50% {
         transform: rotate(180deg);
     }
-  
+
     75% {
         transform: rotate(360deg);
     }
-  
+
     100% {
         transform: rotate(360deg);
     }
@@ -195,19 +195,19 @@ a:hover{
     0% {
        height: 0%;
     }
-      
+
     25% {
        height: 0%;
     }
-      
+
     50% {
        height: 100%;
     }
-      
+
     75% {
        height: 100%;
     }
-      
+
     100% {
         height: 0%;
     }
@@ -220,7 +220,7 @@ a:hover{
 /* css */
 
 .top-header {
-    background-color: #e7d045;
+    background-color: #41e296;
 }
 
 .top-header .top-right-text {
@@ -513,7 +513,7 @@ a:hover{
     margin-bottom: 0;
     font-size: 20px;
     font-weight: bold;
-    color: #e7d045;
+    color: #41e296;
 }
 
 .pricing-cost h6 {
@@ -545,7 +545,7 @@ a:hover{
 }
 
 .pricing-part-btn button {
-    background-color: #e7d045;
+    background-color: #41e296;
     border: none;
     color: white;
     width: 100%;
@@ -648,16 +648,16 @@ a:hover{
     background-image: url(../img/dp1.png);
 }
 
-.doctorl-dp-img-2 { 
-    background-image: url(../img/dp2.png); 
+.doctorl-dp-img-2 {
+    background-image: url(../img/dp2.png);
 }
 
-.doctorl-dp-img-3 { 
-    background-image: url(../img/dp3.png); 
+.doctorl-dp-img-3 {
+    background-image: url(../img/dp3.png);
 }
 
-.doctorl-dp-img-4 { 
-    background-image: url(../img/dp4.png); 
+.doctorl-dp-img-4 {
+    background-image: url(../img/dp4.png);
 }
 
 .doctorl-dp-img {
@@ -749,7 +749,7 @@ a:hover{
 .footer-r1-detail h3 {
     font-size: 17px;
     font-family: 'AvenirLTStd-Medium';
-    color: #e7d045;
+    color: #41e296;
 }
 
 .footer-r1-detail p {
@@ -1013,7 +1013,7 @@ a:hover{
 }
 
 .d-detail-collapse-doctor .card {
-    border: 1px solid white; 
+    border: 1px solid white;
 }
 
 .doctorpg-main-box {
@@ -1066,7 +1066,7 @@ a:hover{
 
 .doctorpg-tab-mainbox .tabcontent {
   display: none;
-} 
+}
 
 .facility-img-main-box img {
     width: 100%;
@@ -1102,7 +1102,7 @@ a:hover{
 }
 
 .pricingpg-main-box {
-    margin: 80px 0px; 
+    margin: 80px 0px;
 }
 
 .pricingpg-part-main-box {
@@ -1370,7 +1370,7 @@ a:hover{
 }
 
 .part-form-main-box {
-    margin: 0px; 
+    margin: 0px;
 }
 
 .modal h2 {
@@ -1519,7 +1519,7 @@ a:hover{
 /*    height: 50px;*/
 /*    position: absolute;*/
 /*    display: block;*/
-/*    background-color: #e7d045;*/
+/*    background-color: #41e296;*/
 /*    bottom: 30px;*/
 /*    right: 10px;*/
 /*    border-radius: 50%;*/
@@ -1676,7 +1676,7 @@ a:hover{
 }
 
 .pending {
-    color: #e7d045;
+    color: #41e296;
 }
 
 .cancel {
@@ -1874,7 +1874,7 @@ div#forgotmodel{
     display: none;
 }
 
-#overlay{   
+#overlay{
     position: fixed;
     top: 0;
     z-index: 100;
@@ -1887,9 +1887,9 @@ div#forgotmodel{
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
 }
-#overlaychk{   
+#overlaychk{
     position: fixed;
     top: 0;
     z-index: 100;
@@ -1898,7 +1898,7 @@ div#forgotmodel{
     display: none;
     background: rgba(0,0,0,0.6);
 }
-.laychk{   
+.laychk{
     position: fixed;
     top: 0;
     z-index: 100;
@@ -1916,8 +1916,8 @@ div#forgotmodel{
     animation: sp-anime 0.8s infinite linear;
 }
 @keyframes sp-anime {
-    100% { 
-        transform: rotate(360deg); 
+    100% {
+        transform: rotate(360deg);
     }
 }
 .is-hide{
@@ -2076,7 +2076,7 @@ div#forgotmodel{
 
 
 .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
-   
+
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
@@ -2390,7 +2390,7 @@ img {
 }
 
 .pricing-part-btn a {
-    background-color: #e7d045;
+    background-color: #41e296;
     border: none;
     color: white;
     width: 100%;
@@ -2406,7 +2406,7 @@ img {
 
 .card-header{
     color:white;
-    background: #e7d045;
+    background: #41e296;
 }
 
 
@@ -2460,7 +2460,7 @@ img {
     float: right;
     margin-right: 0px;
     margin-top: 10px;
-    background-color: #e7d045;
+    background-color: #41e296;
     border-radius: 1000px;
     border: none;
     padding: 7px 15px;
@@ -2489,7 +2489,7 @@ img {
     float: right;
     margin-right: 0px;
     margin-top: 10px;
-    background-color: #e7d045;
+    background-color: #41e296;
     border-radius: 1000px;
     border: none;
     padding: 7px 15px;
@@ -2507,7 +2507,7 @@ img {
 
 .call-notification-box {
     padding: 10px 20px;
-    background-color: #e7d045;
+    background-color: #41e296;
     display: flex;
 }
 
@@ -2593,7 +2593,7 @@ img {
 }
 
 .ch2 {
-    background-color: #e7d045;
+    background-color: #41e296;
     padding: 20px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
